@@ -1,18 +1,28 @@
 <!doctype html>
 <html ngApp="angularRevealSlides">
     <head>
-      <script src="bower_components/angular/angular.js"></script>
       <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-leap/build/angular-leap.js"></script>
+      <script src="bower_components/leapjs/leap.js"></script>
       <script src="bower_components/reveal.js/js/reveal.js"></script>
+      <script src="js/module.js"></script>
+      <script src="js/revealConfig.js"></script>
       <script>
           window.onload = function(){
             Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true
             });
           };
       </script>
     </head>
 
     <body>
+
         <div class="reveal"
              leap-swipe-left="left()"
              leap-swipe-right="right()"
@@ -37,7 +47,6 @@
                   <p>Visit internal slide<a href="#/show-a-link"> 2</a>
               </section>
           </div>
-
         </div>
     </body>
 </html>
