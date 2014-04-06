@@ -1,1 +1,1 @@
-angular.module("angularRevealSlides", ['angular-leap']);
+angular.module("angularRevealSlides", ['angularLeap']);
