@@ -1,14 +1,15 @@
 <!doctype html>
-<html ngApp="angularRevealSlides">
+<html ngApp="angularRevealSlides" class="ng-scope">
     <head>
+      <link rel="stylesheet" href="bower_components/reveal.js/css/theme/default.css">
       <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+      <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+      <script type="text/javascript" src="bower_components/angular-leap/build/angular-leap.js"></script>
+      <script type="text/javascript" src="bower_components/leapjs/leap.js"></script>
+      <script type="text/javascript" src="bower_components/reveal.js/js/reveal.js"></script>
+      <script type="text/javascript" src="js/module.js"></script>
+      <script type="text/javascript" src="js/revealConfig.js"></script>
 
-      <script src="bower_components/angular/angular.js"></script>
-      <script src="bower_components/angular-leap/build/angular-leap.js"></script>
-      <script src="bower_components/leapjs/leap.js"></script>
-      <script src="bower_components/reveal.js/js/reveal.js"></script>
-      <script src="js/module.js"></script>
-      <script src="js/revealConfig.js"></script>
       <script>
           window.onload = function(){
             Reveal.initialize({
@@ -22,7 +23,6 @@
     </head>
 
     <body>
-
         <div class="reveal"
              leap-swipe-left="left()"
              leap-swipe-right="right()"
@@ -31,14 +31,15 @@
 
           <div class="slides">
               <section>
-                  <h1>About My Product</h1>
-                  <p>My product discussed here</p>
+                  <h1>Slide 1</h1>
+                  <h2>Hello World</h2>
+                  <p>This presentation uses reveal, angular and leap motion</p>
               </section>
 
               <section id="show-a-link">
-                  <h1>Show a live link</h1>
-                  <p>Slide 2 discussed here</p>
-                  <p>See <a href="http://www.htmlcheats.com">HTMLCheats.com</a><p>
+                  <h1>Slide 2</h1>
+                  <h2>Here is a link to me favourite website</h2>
+                  <p>See <a href="http://www.webtender.com">Webtender.com</a><p>
               </section>
 
               <section>
